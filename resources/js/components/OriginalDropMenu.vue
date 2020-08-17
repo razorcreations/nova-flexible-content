@@ -1,5 +1,5 @@
 <template>
-    <div class="z-20 relative" v-if="layouts">
+    <div class="z-20 relative component-list" v-if="layouts">
         <div class="relative" v-if="layouts.length > 1">
             <div v-if="isLayoutsDropdownOpen"
                  class="rounded-lg shadow-lg max-w-full mb-3 pin-b max-h-search overflow-y-auto border border-40"
