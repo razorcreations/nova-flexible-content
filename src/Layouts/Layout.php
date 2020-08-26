@@ -15,15 +15,12 @@ use Illuminate\Database\Eloquent\Concerns\HasAttributes;
 use Illuminate\Database\Eloquent\Concerns\HidesAttributes;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Database\Eloquent\Model;
-use Spatie\MediaLibrary\HasMedia;
-use Whitecube\NovaFlexibleContent\Concerns\HasMediaLibrary;
 
-class Layout implements LayoutInterface, JsonSerializable, ArrayAccess, Arrayable, HasMedia
+class Layout implements LayoutInterface, JsonSerializable, ArrayAccess, Arrayable
 {
     use HasAttributes;
     use HidesAttributes;
 	use HasFlexible;
-	use HasMediaLibrary;
 
     /**
      * The layout's name
