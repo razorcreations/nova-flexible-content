@@ -39,6 +39,9 @@ class Resolver implements ResolverInterface
         $value = $this->extractValueFromResource($resource, $attribute);
 
         return collect($value)->map(function($item) use ($layouts) {
+            if(!$item){
+                return;
+	    }
             $layout = $layouts->find($item->layout);
 
             if(!$layout) return;
