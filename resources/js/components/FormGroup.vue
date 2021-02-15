@@ -96,7 +96,7 @@ export default {
     data() {
         return {
             removeMessage: false,
-            collapsed: this.group.collapsed,
+            collapsed: true,
             readonly: this.group.readonly,
         };
     },
